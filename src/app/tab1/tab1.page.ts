@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ToastController } from '@ionic/angular';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  dados = [{nome: 'das', c:'sad'}, {nome: 'das', c:'sad'}];
+
+  constructor(public toastController: ToastController) {}
 
 }
